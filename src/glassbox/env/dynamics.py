@@ -11,7 +11,7 @@ mu = 1.0
 t = 1
 
 alpha = 0.0
-thrust_accel = 0.0001
+thrust_accel = 0.001
 
 
 def dynamics(t, state, alpha, thrust_accel):
