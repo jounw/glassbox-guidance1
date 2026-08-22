@@ -1,8 +1,3 @@
-# src/glassbox/training/train_sac_variant.py
-"""Train one SAC model with a given seed, for the cross-SAC reproducibility study.
-
-Usage: python train_sac_variant.py <seed> <out_path> [total_timesteps]
-"""
 
 import sys
 
