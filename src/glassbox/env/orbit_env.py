@@ -15,7 +15,7 @@ class OrbitEnv(gym.Env):
         self.action_space = spaces.Box(low=np.array([-1]), high=np.array([1]), shape=(1, ), dtype=np.float32 )
         self.observation_space = spaces.Box(low=np.array([0, -1, -1, -1, -1]), high=np.array([3*target_p, 1, 1, 1, 1]), shape=(5,), dtype=np.float32)
 
-        #self.state = (0, 0, 0, 0) # Should be None? But None cause error
+
         self.state: np.ndarray | None = None
         self.step_count = 0
 
