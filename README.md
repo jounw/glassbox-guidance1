@@ -1,13 +1,13 @@
-# What Do RL Spacecraft Guidance Policies Learn?
+# What Do RL Spacecraft Guidance Policies Learn? Symbolic Distillation against a Known Control Law
 
-**Symbolic Distillation against a Known Control Law** · NeurIPS 2026 Workshop on Interpretability for Discovery
+NeurIPS 2026 Workshop on Interpretability for Discovery
 
 [[Paper]](https://openreview.net/forum?id=XTuN0nml2m)
 
 We train five SAC policies on planar low-thrust orbit raising, distill each into closed-form steering laws with PySR, and compare the result against Q-law.
 
 - The raw networks steer differently, but 10 of 15 distillations collapse onto one common template: Q-law's small-eccentricity linearization.
-- A two-line law built from the median parameters, with no tuning, succeeds on all 200 test episodes and uses less fuel than every teacher.
+- A two-line law built from the median parameters succeeds on all 200 test episodes and uses less fuel than every teacher.
 
 ## Consensus law
 
@@ -65,11 +65,12 @@ print(f"{ok}/200 success")
 ## Citation
 
 ```bibtex
-@inproceedings{won2026what,
-  title     = {What Do {RL} Spacecraft Guidance Policies Learn? Symbolic Distillation against a Known Control Law},
-  author    = {Joun Won},
-  booktitle = {NeurIPS 2026 Workshop on Interpretability for Discovery},
-  year      = {2026},
-  url       = {https://openreview.net/forum?id=XTuN0nml2m}
+@inproceedings{
+won2026what,
+title={What Do {RL} Spacecraft Guidance Policies Learn? Symbolic Distillation against a Known Control Law},
+author={Joun Won},
+booktitle={NeurIPS 2026 Workshop on Interpretability for Discovery},
+year={2026},
+url={https://openreview.net/forum?id=XTuN0nml2m}
 }
 ```
