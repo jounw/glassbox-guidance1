@@ -21,5 +21,5 @@ for i in range(env.max_steps):
         p, f, g, L = env.state
         e = np.sqrt(f**2 + g**2)
         print(f"p={p:.4f}, e={e:.4f}, steps={env.step_count}, error={env._error():.4f}")
-        print(f"truncated at {i+1} — FFFFFFfffuck")
+        print(f"truncated at {i+1}")
         break
